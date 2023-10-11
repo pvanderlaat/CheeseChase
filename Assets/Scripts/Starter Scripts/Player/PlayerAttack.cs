@@ -19,6 +19,8 @@ public class PlayerAttack : MonoBehaviour
 	public Damager weapon;
 	[Tooltip("The coolDown before you can attack again")]
 	public float coolDown = 0.4f;
+	[Tooltip("The time to wait before the attack hits")]
+	public float waitBeforeAttack = 0.1f;
 
 	[Header("Audio")]
 	public PlayerAudio playerAudio;
@@ -59,6 +61,8 @@ public class PlayerAttack : MonoBehaviour
 
 		if (Input.GetKey(KeyCode.Mouse0))
 		{
+			// StartCoroutine(WaitBeforeAttack());
+			WaitBeforeAttack();
 			Attack();
 			if (playerAudio && !playerAudio.AttackSource.isPlaying && playerAudio.AttackSource.clip != null)
 			{
@@ -116,5 +120,10 @@ public class PlayerAttack : MonoBehaviour
 		canAttack = false;
 		yield return new WaitForSeconds(coolDown);
 		canAttack = true;
+	}
+
+	private IEnumerator WaitBeforeAttack()
+	{
+		yield return new WaitForSeconds(waitBeforeAttack);
 	}
 }
