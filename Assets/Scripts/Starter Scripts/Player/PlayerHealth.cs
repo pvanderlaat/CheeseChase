@@ -213,7 +213,18 @@ public class PlayerHealth : MonoBehaviour
 				if (weapon.alignmnent == Damager.Alignment.Enemy ||
 					weapon.alignmnent == Damager.Alignment.Environment)
 				{
-					DecreaseHealth(weapon.damageValue);
+					if (collision.tag == "MouseTrap") {
+						bool disabled_ = collision.transform.parent.GetComponent<EnemyAttack>().disabled;
+						Debug.Log("disabled = " + disabled_);
+						if (!disabled_) {
+							DecreaseHealth(weapon.damageValue);
+							collision.transform.parent.GetComponent<EnemyAttack>().disabled = true;
+							collision.transform.parent.GetComponent<EnemyHealth>().spawnCollectibleOnDeath = false;
+						}
+					}
+					else {
+						DecreaseHealth(weapon.damageValue);
+					}
 					if (currentHealth == 0)
 					{
 						TimeToDie();

@@ -18,7 +18,7 @@ public class CollectibleManagerTMP : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        collectibles.text = "Brains " + collected;
+        collectibles.text = collected + "/5";
     }
 
     public void Collected(int value)

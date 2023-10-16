@@ -7,6 +7,7 @@ public class CollectibleItemTMP : MonoBehaviour
 {
 	[Header("Collectible Manager: Collectible Options")]
 	public bool isCollectible = false;
+	private bool isTriggering = false;
 	public int collectibleValue = 1;
 	private CollectibleManagerTMP cManager;
 
@@ -38,8 +39,9 @@ public class CollectibleItemTMP : MonoBehaviour
 
 	private void OnTriggerEnter2D(Collider2D collision)
 	{
-		if (collision.tag == "Player")
+		if (collision.tag == "Player" && !isTriggering)
 		{
+			isTriggering = true;
 			if (isCollectible)
 			{
 				cManager.Collected(collectibleValue);

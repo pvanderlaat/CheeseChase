@@ -17,6 +17,9 @@ public class EnemyAttack : MonoBehaviour
 	public float coolDown = 0.5f;
 	private bool canAttack = true;
 
+	public bool disabled = false;
+	private bool disabledColorSet = false;
+
 	private void Update()
 	{
 		Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, attackRadius);
@@ -27,18 +30,35 @@ public class EnemyAttack : MonoBehaviour
 				Attack(other.transform.position - this.transform.position);
 			}
 		}
+		if (disabled && !disabledColorSet) {
+			disabledColorSet = true;
+			SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
+			Color originalColor = spriteRenderer.color;
+			float tintIntensity = 0.5f;
+			Color tintedColor = new Color(
+                originalColor.r * tintIntensity,
+                originalColor.g * tintIntensity,
+                originalColor.b * tintIntensity,
+                originalColor.a
+            );
+
+            spriteRenderer.color = tintedColor;
+
+		}
 	}
 
 	public void Attack(Vector2 attackDir)
 	{
 		//This is where the weapon is rotated in the right direction that you are facing
-		if (weapon && canAttack)
+		if (weapon && canAttack && !disabled)
 		{
+			Debug.Log("attacking... tag = " + this.tag);
 			if (weapon is ProjectileWeapon)
 				weapon.WeaponStart(this.transform, attackDir, Vector2.zero);
 			else
 				weapon.WeaponStart(this.transform, attackDir);
 
+			// MouseTraps become disabled
 			StartCoroutine(CoolDown());
 		}
 	}
@@ -55,6 +75,9 @@ public class EnemyAttack : MonoBehaviour
 	{
 		canAttack = false;
 		yield return new WaitForSeconds(coolDown);
+		if (this.tag == "MouseTrap") {
+			disabled = true;
+		}
 		canAttack = true;
 	}
 

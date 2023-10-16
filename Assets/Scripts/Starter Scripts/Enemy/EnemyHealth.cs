@@ -23,6 +23,10 @@ public class EnemyHealth : MonoBehaviour
 	public GameObject HealthBar;
 	public RectTransform canvasRectTransform;
 
+	public bool spawnCollectibleOnDeath = false;
+    public GameObject collectible;
+	private bool creatingCollectible = false;
+
 
 	private Image healthBarImage;
 	private RectTransform healthRectTransform;
@@ -95,6 +99,15 @@ public class EnemyHealth : MonoBehaviour
 
 				if (currentHealth == 0)
 				{
+					if (spawnCollectibleOnDeath && !creatingCollectible) {
+						Vector3 position = transform.position;
+						position.x -= (float) 6.5;
+						position.y -= (float) 6.7;
+						// Debug.Log(position);
+						// Debug.Log("CREATING COLLECTIBLE");
+						creatingCollectible = true;
+						Instantiate(collectible, position, transform.rotation);
+					}
 					Destroy(this.gameObject); //If this enemy reaches 0 health, they are straight up destroyed. 
 											  //If you want something fancy like an animation or the like, you can try to implement it here
 					Destroy(healthBarImage.gameObject);

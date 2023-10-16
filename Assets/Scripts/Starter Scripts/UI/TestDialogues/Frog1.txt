@@ -1,0 +1,12 @@
+[NAME=Friendly Frog][SPEAKERSPRITE=Frog] Woah, are you crazy?!
+[NAME=You][SPEAKERSPRITE=Mouse] What?
+[NAME=Friendly Frog][SPEAKERSPRITE=Frog] This sewer is crawling with cats!
+[NAME=You][SPEAKERSPRITE=Mouse] So? I'm chasing cheese!
+[NAME=Friendly Frog][SPEAKERSPRITE=Frog] The cats will catch you!
+[NAME=You][SPEAKERSPRITE=Mouse] I'm willing to risk it...
+[NAME=You][SPEAKERSPRITE=Mouse] For the cheese!
+[NAME=Friendly Frog][SPEAKERSPRITE=Frog] Ok then...
+[NAME=Friendly Frog][SPEAKERSPRITE=Frog] Well, you see that chest there?
+[NAME=You][SPEAKERSPRITE=Mouse] Yeah...
+[NAME=Friendly Frog][SPEAKERSPRITE=Frog] Use it to hide from the cats!
+[NAME=You][SPEAKERSPRITE=Mouse] Oh, thanks for the tip!

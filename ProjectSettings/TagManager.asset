@@ -6,6 +6,12 @@ TagManager:
   tags:
   - GuardView
   - Cover
+  - Respawn1
+  - Respawn2
+  - GuardView1
+  - GuardView2
+  - CheeseBar
+  - MouseTrap
   layers:
   - Default
   - TransparentFX

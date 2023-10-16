@@ -1,0 +1,2 @@
+[NAME=You][SPEAKERSPRITE=Mouse] Shoot, I can't get the cheese!
+[NAME=You][SPEAKERSPRITE=Mouse] This big crate is in the way!

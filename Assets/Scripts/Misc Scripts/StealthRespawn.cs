@@ -6,13 +6,15 @@ public class StealthRespawn : MonoBehaviour
 {
 
 	public bool isHidden = false;
-	private GameObject respawn;
+	private GameObject respawn1;
+	private GameObject respawn2; 
 
 	void Start()
 	{
 		//If your player starts in cover, change this to true. Shouldn't be too big of an issue though.
 		isHidden = false;
-		respawn = GameObject.FindGameObjectWithTag("Respawn");
+		respawn1 = GameObject.FindGameObjectWithTag("Respawn1");
+		respawn2 = GameObject.FindGameObjectWithTag("Respawn2");
 	}
 
 	private void OnTriggerEnter2D(Collider2D collision)
@@ -25,11 +27,18 @@ public class StealthRespawn : MonoBehaviour
 	private void OnTriggerStay2D(Collider2D collision)
 	{
 		// I couldn't think of a better tag name than GuardView. Feel free to change it if you come up with a better name
-		if (collision.CompareTag("GuardView"))
+		if (collision.CompareTag("GuardView1"))
 		{
 			if (!isHidden)
 			{
-				transform.position = respawn.transform.position;
+				transform.position = respawn1.transform.position;
+			}
+		}
+		if (collision.CompareTag("GuardView2"))
+		{
+			if (!isHidden)
+			{
+				transform.position = respawn2.transform.position;
 			}
 		}
 	}
