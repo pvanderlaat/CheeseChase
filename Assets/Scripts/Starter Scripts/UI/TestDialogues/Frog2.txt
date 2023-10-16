@@ -1,3 +1,2 @@
 [NAME=Friendly Frog][SPEAKERSPRITE=Frog] Woah, didn't you hear me?!
-[NAME=You][SPEAKERSPRITE=Mouse] What?
-[NAME=Friendly Frog][SPEAKERSPRITE=Frog] Use the chest to hide from the cats!
+[NAME=Friendly Frog][SPEAKERSPRITE=Frog] Use the chest to stay hidden.

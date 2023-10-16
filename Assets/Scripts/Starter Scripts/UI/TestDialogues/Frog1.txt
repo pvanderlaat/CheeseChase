@@ -1,4 +1,5 @@
-[NAME=Friendly Frog][SPEAKERSPRITE=Frog] Woah, are you crazy?!
+[NAME=You][SPEAKERSPRITE=Mouse] Whoah there!
+[NAME=Friendly Frog][SPEAKERSPRITE=Frog] You gotta be careful!
 [NAME=You][SPEAKERSPRITE=Mouse] What?
 [NAME=Friendly Frog][SPEAKERSPRITE=Frog] This sewer is crawling with cats!
 [NAME=You][SPEAKERSPRITE=Mouse] So? I'm chasing cheese!

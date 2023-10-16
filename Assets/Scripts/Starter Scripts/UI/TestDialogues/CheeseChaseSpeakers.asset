@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: CheeseChaseSpeakers
   m_EditorClassIdentifier: 
   speakerLibrary:
-  - name: Mouse
-    sprite: {fileID: 21300000, guid: a909dbff49c214f32b22b40bb53e2cd2, type: 3}
   - name: Frog
     sprite: {fileID: 21300000, guid: 9b21c97e35cef4295951fe2ce1770532, type: 3}
+  - name: Mouse
+    sprite: {fileID: 21300000, guid: a909dbff49c214f32b22b40bb53e2cd2, type: 3}
