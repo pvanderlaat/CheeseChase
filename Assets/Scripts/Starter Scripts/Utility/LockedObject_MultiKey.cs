@@ -11,6 +11,8 @@ public class LockedObject_MultiKey : MonoBehaviour
     public GameObject unlockGameObject;
     [Tooltip("Set True for affected Game Object to be activated or False to be deactivated when a key is used.")]
     public bool setActive = false;
+
+    public int numToPass = 0;
     public bool oneTimeActivation = true;
     private bool used = false;
 
@@ -38,57 +40,64 @@ public class LockedObject_MultiKey : MonoBehaviour
 
     private PlayerInventory inv;
 
+    private CollectibleManagerTMP cManager;
+
     private void Start()
     {
         inv = FindObjectOfType<PlayerInventory>();
+        cManager = FindObjectOfType<CollectibleManagerTMP>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (!used)
-        {
-            foreach (var key in neededKeys) //Go through player inventory keys.Count times, checking for a match for each key
-            {
-                foreach (PlayerInventory.Item i in inv.inventory)
-                {
-                    if (useKeyName && i.itemName.ToLower() == key.keyName.ToLower())
-                    {
-                        passAmount++; //Increase pass amount
-                        if (i.destroyOnUse)
-                        {
-                            keysToRemove.Add(i);
-                        }
-                        break;
-                    }
-                    if (useKeyID && i.itemID == key.keyID)
-                    {
-                        passAmount++;
-                        if (i.destroyOnUse)
-                        {
-                            keysToRemove.Add(i);
-                        }
-                        
-                        break;
-                    }
-                }
-            }
-
-            //Do you have all the keys?
-            if (passAmount == neededKeys.Count)
-            {
-                Debug.Log("You have all the keys!");
-                unlockGameObject.SetActive(setActive);
-                Behaviors();
-                
-            }
-            else
-            {
-                Debug.Log("You don't have all the keys...");
-            }
-            //Reset
-            passAmount = 0;
-
+        if (cManager.GetCollected() >= numToPass) {
+            cManager.Taxed(numToPass);
+            unlockGameObject.SetActive(false);
         }
+        // if (!used)
+        // {
+        //     foreach (var key in neededKeys) //Go through player inventory keys.Count times, checking for a match for each key
+        //     {
+        //         foreach (PlayerInventory.Item i in inv.inventory)
+        //         {
+        //             if (useKeyName && i.itemName.ToLower() == key.keyName.ToLower())
+        //             {
+        //                 passAmount++; //Increase pass amount
+        //                 if (i.destroyOnUse)
+        //                 {
+        //                     keysToRemove.Add(i);
+        //                 }
+        //                 break;
+        //             }
+        //             if (useKeyID && i.itemID == key.keyID)
+        //             {
+        //                 passAmount++;
+        //                 if (i.destroyOnUse)
+        //                 {
+        //                     keysToRemove.Add(i);
+        //                 }
+                        
+        //                 break;
+        //             }
+        //         }
+        //     }
+
+        //     //Do you have all the keys?
+        //     if (passAmount == neededKeys.Count)
+        //     {
+        //         Debug.Log("You have all the keys!");
+        //         unlockGameObject.SetActive(setActive);
+        //         Behaviors();
+                
+        //     }
+        //     else
+        //     {
+        //         Debug.Log("You don't have all the keys...");
+        //     }
+        //     //Reset
+        //     passAmount = 0;
+
+        // }
     }
 
 

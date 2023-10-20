@@ -1,4 +1,4 @@
-[NAME=Friendly Frog][SPEAKERSPRITE=Mouse] Welcome to the sewer!
+[NAME=Friendly Frog][SPEAKERSPRITE=Frog] Welcome to the sewer!
 [NAME=Friendly Frog][SPEAKERSPRITE=Frog] Welcome to the sewer!
 [NAME=You][SPEAKERSPRITE=Mouse] Thanks!
 [NAME=Friendly Frog][SPEAKERSPRITE=Frog] Us frogs run it down here.

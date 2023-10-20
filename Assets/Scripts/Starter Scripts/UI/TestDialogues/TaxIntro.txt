@@ -1,4 +1,4 @@
-[NAME=Friendly Frog][SPEAKERSPRITE=Mouse] Welcome to the sewers!
+[NAME=Friendly Frog][SPEAKERSPRITE=Frog] One last thing.
 [NAME=Friendly Frog][SPEAKERSPRITE=Frog] In exchange for our help,
 [NAME=Friendly Frog][SPEAKERSPRITE=Frog] we collect a small tax.
 [NAME=You][SPEAKERSPRITE=Mouse] What kind of tax?

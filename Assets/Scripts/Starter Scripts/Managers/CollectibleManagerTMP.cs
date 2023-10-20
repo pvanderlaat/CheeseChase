@@ -18,12 +18,24 @@ public class CollectibleManagerTMP : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        collectibles.text = collected + "/5";
+        collectibles.text = collected + "";
     }
 
     public void Collected(int value)
     {
         collected += value;
+    }
+
+    public void Taxed(int value)
+    {
+        collected -= value;
+        if (collected < 0) {
+            collected = 0;
+        }
+    }
+
+    public int GetCollected() {
+        return collected;
     }
 
 }

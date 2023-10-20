@@ -1,0 +1,2 @@
+[NAME=You][SPEAKERSPRITE=Frog] Hello.
+[NAME=You][SPEAKERSPRITE=Frog] One cheese, please.
