@@ -110,169 +110,169 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ToxicFrogGreenBrown_Idle_0
+      name: ToxicFrogGreenBrown_Idle (old)_0
       rect:
         serializedVersion: 2
-        x: 11
+        x: 16
+        y: 15
+        width: 21
+        height: 17
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0036607b8357f4df4a9b06c88f492abd
+      internalID: -820506188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToxicFrogGreenBrown_Idle (old)_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 15
+        width: 21
+        height: 17
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec781f03d560f4209be82e7f00a40de4
+      internalID: -52951010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToxicFrogGreenBrown_Idle (old)_2
+      rect:
+        serializedVersion: 2
+        x: 112
         y: 15
         width: 21
         height: 16
-      alignment: 5
-      pivot: {x: 1, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3115c23f4378648d295e01c6cff17f34
-      internalID: 2009778573
+      spriteID: e57137931e2a74423b5a544e269fb170
+      internalID: 1086359626
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ToxicFrogGreenBrown_Idle_1
+      name: ToxicFrogGreenBrown_Idle (old)_3
       rect:
         serializedVersion: 2
-        x: 59
+        x: 160
         y: 15
         width: 21
         height: 16
-      alignment: 5
-      pivot: {x: 1, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 036d09c71c965416d9a68920d1f4b112
-      internalID: -1845542019
+      spriteID: dcbf5d2f7346948258afce0f92c541a2
+      internalID: 980536398
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ToxicFrogGreenBrown_Idle_2
+      name: ToxicFrogGreenBrown_Idle (old)_4
       rect:
         serializedVersion: 2
-        x: 107
-        y: 15
-        width: 21
-        height: 15
-      alignment: 5
-      pivot: {x: 1, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 746867a7302bf430d801f42c5c114478
-      internalID: -827885964
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ToxicFrogGreenBrown_Idle_3
-      rect:
-        serializedVersion: 2
-        x: 155
+        x: 207
         y: 15
         width: 22
         height: 15
-      alignment: 5
-      pivot: {x: 1, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c41e54c1eff5b455ebda049fd5b66f12
-      internalID: 1577160041
+      spriteID: db18ace46407e4e04b762fe6406ff3ca
+      internalID: -153641409
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ToxicFrogGreenBrown_Idle_4
+      name: ToxicFrogGreenBrown_Idle (old)_5
       rect:
         serializedVersion: 2
-        x: 203
+        x: 256
+        y: 15
+        width: 21
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48efa458c2e1c4bc7be9b7b81b99d712
+      internalID: -1955207694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToxicFrogGreenBrown_Idle (old)_6
+      rect:
+        serializedVersion: 2
+        x: 304
         y: 15
         width: 21
         height: 16
-      alignment: 5
-      pivot: {x: 1, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ba9638183d439487b8376173489f2b03
-      internalID: 1574548639
+      spriteID: 5913beeb97dbc4f1bbc384d809ac70c9
+      internalID: 615415879
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ToxicFrogGreenBrown_Idle_5
+      name: ToxicFrogGreenBrown_Idle (old)_7
       rect:
         serializedVersion: 2
-        x: 251
+        x: 352
         y: 15
         width: 21
         height: 16
-      alignment: 5
-      pivot: {x: 1, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9964431872f95450ba3260d4ef46d124
-      internalID: -651067037
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ToxicFrogGreenBrown_Idle_6
-      rect:
-        serializedVersion: 2
-        x: 299
-        y: 15
-        width: 21
-        height: 17
-      alignment: 5
-      pivot: {x: 1, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 53ae9e35319314578a858ac69fdd9b96
-      internalID: -574291693
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ToxicFrogGreenBrown_Idle_7
-      rect:
-        serializedVersion: 2
-        x: 347
-        y: 15
-        width: 21
-        height: 17
-      alignment: 5
-      pivot: {x: 1, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e7a168582c23d41be95be40d45ee9b60
-      internalID: 1368619798
+      spriteID: 76089768186584274980e70de0a77701
+      internalID: 1278744096
       vertices: []
       indices: 
       edges: []
@@ -288,14 +288,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      ToxicFrogGreenBrown_Idle_0: 2009778573
-      ToxicFrogGreenBrown_Idle_1: -1845542019
-      ToxicFrogGreenBrown_Idle_2: -827885964
-      ToxicFrogGreenBrown_Idle_3: 1577160041
-      ToxicFrogGreenBrown_Idle_4: 1574548639
-      ToxicFrogGreenBrown_Idle_5: -651067037
-      ToxicFrogGreenBrown_Idle_6: -574291693
-      ToxicFrogGreenBrown_Idle_7: 1368619798
+      ToxicFrogGreenBrown_Idle (old)_0: -820506188
+      ToxicFrogGreenBrown_Idle (old)_1: -52951010
+      ToxicFrogGreenBrown_Idle (old)_2: 1086359626
+      ToxicFrogGreenBrown_Idle (old)_3: 980536398
+      ToxicFrogGreenBrown_Idle (old)_4: -153641409
+      ToxicFrogGreenBrown_Idle (old)_5: -1955207694
+      ToxicFrogGreenBrown_Idle (old)_6: 615415879
+      ToxicFrogGreenBrown_Idle (old)_7: 1278744096
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

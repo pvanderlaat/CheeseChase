@@ -28,6 +28,7 @@ public class DialogueManager : MonoBehaviour
 	[Tooltip("the text body of the name you want to display")]
 	public Text NameText; // the text body of the name you want to display
 	[Tooltip("Image where the speaker images will appear")]
+
 	public Image speaker; //Image where the speaker images will appear
 	[Tooltip("This is the little indicator that the next text can be shown (add a floater to it for added effect)")]
 	public GameObject continueImage;

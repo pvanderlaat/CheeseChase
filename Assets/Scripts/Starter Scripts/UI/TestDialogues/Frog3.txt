@@ -1,6 +1,5 @@
-[NAME=Friendly Frog][SPEAKERSPRITE=Frog] Woah, hold up little guy!
-[NAME=Friendly Frog][SPEAKERSPRITE=Frog] I've seen mouse traps down here!
-[NAME=You][SPEAKERSPRITE=Mouse] Oh no!
-[NAME=Friendly Frog][SPEAKERSPRITE=Frog] Yeah, don't walk across them. But...
-[NAME=Friendly Frog][SPEAKERSPRITE=Frog] If you attack them just right...
-[NAME=Friendly Frog][SPEAKERSPRITE=Frog] You can destroy them!
+[NAME=Friendly Frog][SPEAKERSPRITE=Frog] Ouch! Don't step on mouse traps.
+[NAME=Friendly Frog][SPEAKERSPRITE=Frog] See, you lost a life?
+[NAME=You][SPEAKERSPRITE=Mouse] How do you know?
+[NAME=Friendly Frog][SPEAKERSPRITE=Frog] On the top left corner of the screen.
+[NAME=Friendly Frog][SPEAKERSPRITE=Frog] Don't worry, medic frogs can help!

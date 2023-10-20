@@ -1,3 +1,0 @@
-[NAME=Friendly Frog][SPEAKERSPRITE=Frog] You see this tunnel here?
-[NAME=Friendly Frog][SPEAKERSPRITE=Frog] I want to see where it leads...
-[NAME=Friendly Frog][SPEAKERSPRITE=Frog] But I'm too big to fit :(

@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speakerLibrary:
   - name: Frog
-    sprite: {fileID: 21300000, guid: 9b21c97e35cef4295951fe2ce1770532, type: 3}
+    sprite: {fileID: 21300000, guid: c456c89472a9f42e1b84d50e6b983b40, type: 3}
   - name: Mouse
-    sprite: {fileID: 21300000, guid: a909dbff49c214f32b22b40bb53e2cd2, type: 3}
+    sprite: {fileID: 21300000, guid: a124cbb0a30984373a9eae337a7dd9c6, type: 3}

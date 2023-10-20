@@ -1,2 +1,6 @@
-[NAME=Friendly Frog][SPEAKERSPRITE=Frog] Woah, didn't you hear me?!
-[NAME=Friendly Frog][SPEAKERSPRITE=Frog] Use the chest to stay hidden.
+[NAME=Friendly Frog][SPEAKERSPRITE=Mouse] Welcome to the sewers!
+[NAME=Friendly Frog][SPEAKERSPRITE=Frog] Wazzup mouse!
+[NAME=Friendly Frog][SPEAKERSPRITE=Frog] I'm a blue frog.
+[NAME=You][SPEAKERSPRITE=Mouse] It smells...
+[NAME=You][SPEAKERSPRITE=Mouse] CHEESY!!!
+[NAME=Friendly Frog][SPEAKERSPRITE=Frog] Ok...

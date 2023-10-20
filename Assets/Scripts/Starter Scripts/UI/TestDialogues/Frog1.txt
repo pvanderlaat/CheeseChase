@@ -1,13 +1,6 @@
-[NAME=You][SPEAKERSPRITE=Mouse] Whoah there!
-[NAME=Friendly Frog][SPEAKERSPRITE=Frog] You gotta be careful!
-[NAME=You][SPEAKERSPRITE=Mouse] What?
-[NAME=Friendly Frog][SPEAKERSPRITE=Frog] This sewer is crawling with cats!
-[NAME=You][SPEAKERSPRITE=Mouse] So? I'm chasing cheese!
-[NAME=Friendly Frog][SPEAKERSPRITE=Frog] The cats will catch you!
-[NAME=You][SPEAKERSPRITE=Mouse] I'm willing to risk it...
-[NAME=You][SPEAKERSPRITE=Mouse] For the cheese!
-[NAME=Friendly Frog][SPEAKERSPRITE=Frog] Ok then...
-[NAME=Friendly Frog][SPEAKERSPRITE=Frog] Well, you see that chest there?
-[NAME=You][SPEAKERSPRITE=Mouse] Yeah...
-[NAME=Friendly Frog][SPEAKERSPRITE=Frog] Use it to hide from the cats!
-[NAME=You][SPEAKERSPRITE=Mouse] Oh, thanks for the tip!
+[NAME=Friendly Frog][SPEAKERSPRITE=Mouse] Welcome to the sewer!
+[NAME=Friendly Frog][SPEAKERSPRITE=Frog] Welcome to the sewer!
+[NAME=You][SPEAKERSPRITE=Mouse] Thanks!
+[NAME=Friendly Frog][SPEAKERSPRITE=Frog] Us frogs run it down here.
+[NAME=Friendly Frog][SPEAKERSPRITE=Frog] If you see a frog with a chat icon,
+[NAME=Friendly Frog][SPEAKERSPRITE=Frog] you can talk to them.
