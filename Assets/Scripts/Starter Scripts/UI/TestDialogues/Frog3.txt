@@ -1,5 +1,9 @@
 [NAME=Friendly Frog][SPEAKERSPRITE=Frog] Ouch! Don't step on mouse traps.
-[NAME=Friendly Frog][SPEAKERSPRITE=Frog] See, you lost a life?
-[NAME=You][SPEAKERSPRITE=Mouse] How do you know?
-[NAME=Friendly Frog][SPEAKERSPRITE=Frog] On the top left corner of the screen.
-[NAME=Friendly Frog][SPEAKERSPRITE=Frog] Don't worry, medic frogs can help!
+[NAME=Friendly Frog][SPEAKERSPRITE=Frog] You lose one life point every time 
+[NAME=Friendly Frog][SPEAKERSPRITE=Frog] you step on one.
+[NAME=Mouse][SPEAKERSPRITE=Mouse] How do you know?
+[NAME=Friendly Frog][SPEAKERSPRITE=Frog] The top left corner of the screen.
+[NAME=Mouse][SPEAKERSPRITE=Mouse] Oh, I see.
+[NAME=Friendly Frog][SPEAKERSPRITE=Frog] See a medic frog for help.
+[NAME=Mouse][SPEAKERSPRITE=Mouse] Medic frog?
+[NAME=Friendly Frog][SPEAKERSPRITE=Frog] They're frogs with a health icon.
