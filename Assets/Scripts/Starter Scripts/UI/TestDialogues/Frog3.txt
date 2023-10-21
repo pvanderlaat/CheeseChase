@@ -1,5 +1,5 @@
 [NAME=Friendly Frog][SPEAKERSPRITE=Frog] Ouch!
-[NAME=Friendly Frog][SPEAKERSPRITE=Frog] Ouch! Don't step on mouse traps.
+[NAME=Friendly Frog][SPEAKERSPRITE=Frog] Don't step on mouse traps!
 [NAME=Friendly Frog][SPEAKERSPRITE=Frog] You lose one life point every time 
 [NAME=Friendly Frog][SPEAKERSPRITE=Frog] you step on one.
 [NAME=Mouse][SPEAKERSPRITE=Mouse] How do you know?

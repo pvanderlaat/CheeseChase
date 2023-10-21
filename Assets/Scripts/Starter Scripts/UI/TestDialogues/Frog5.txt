@@ -1,0 +1,4 @@
+[NAME=Friendly Frog][SPEAKERSPRITE=Frog] It's dangerous here for mice.
+[NAME=Friendly Frog][SPEAKERSPRITE=Frog] Why are you down here?
+[NAME=Friendly Frog][SPEAKERSPRITE=Mouse] I'm chasing cheese!!!
+[NAME=Friendly Frog][SPEAKERSPRITE=Frog] Ok... Good luck.

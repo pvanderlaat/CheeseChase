@@ -34,6 +34,10 @@ public class CollectibleManagerTMP : MonoBehaviour
         }
     }
 
+    public void Reset() {
+        collected = 0;
+    }
+
     public int GetCollected() {
         return collected;
     }

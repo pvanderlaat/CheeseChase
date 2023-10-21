@@ -1,0 +1,3 @@
+[NAME=Friendly Frog][SPEAKERSPRITE=Frog] One last thing.
+[NAME=Friendly Frog][SPEAKERSPRITE=Frog] Try destroying a mouse trap.
+[NAME=Friendly Frog][SPEAKERSPRITE=Frog] But, be careful to not step on it!
