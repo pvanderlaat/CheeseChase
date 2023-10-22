@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
 
 	[HideInInspector]
 	public Vector3 RespawnPlace;
+	public GameObject RespawnObject;
 
 	[Tooltip("Place your player game object in here so this knows where to handle respawns")]
 	public GameObject Player;
@@ -23,7 +24,8 @@ public class GameManager : MonoBehaviour
 
 	public void Respawn(GameObject Player)//This is just where we respawn the player
 	{
-		Player.transform.position = RespawnPlace;
+		// Player.transform.position = RespawnPlace;
+		Player.transform.position = RespawnObject.transform.position;
 	}
 
 	public void SetNewRespawnPlace(GameObject newPlace)//This is 
