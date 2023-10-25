@@ -52,7 +52,6 @@ public class EnemyAttack : MonoBehaviour
 		//This is where the weapon is rotated in the right direction that you are facing
 		if (weapon && canAttack && !disabled)
 		{
-			Debug.Log("attacking... tag = " + this.tag);
 			if (weapon is ProjectileWeapon)
 				weapon.WeaponStart(this.transform, attackDir, Vector2.zero);
 			else

@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CheeseChasePrototype.unity
     guid: a7ee7e78933f64fee8c0b392912dc55b
+  - enabled: 1
+    path: Assets/Scenes/MainLevel.unity
+    guid: 3d4ba5511aece4a13b32adc9389480d5
   m_configObjects: {}

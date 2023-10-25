@@ -3,9 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Teleporter : MonoBehaviour {
+    public bool ChangesLevels = false;
+    public int levelIndex = 0;
 
     public GameObject sp1, sp2;
     public bool TeleportOnKeyPress = true;
+
     private GameObject trig;
     
     void Start() {
@@ -18,7 +21,12 @@ public class Teleporter : MonoBehaviour {
         {
             if (TeleportOnKeyPress && Input.GetKeyDown(KeyCode.T))
             {
-                trig.gameObject.transform.position = sp2.gameObject.transform.position;
+                if (ChangesLevels) {
+                    GameObject.FindGameObjectWithTag("SceneManager").GetComponent<GameSceneManager>().LoadScene(levelIndex);
+                }
+                else {
+                    trig.gameObject.transform.position = sp2.gameObject.transform.position;
+                }
 
             }
             else if (!TeleportOnKeyPress)

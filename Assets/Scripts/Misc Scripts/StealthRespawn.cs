@@ -31,14 +31,22 @@ public class StealthRespawn : MonoBehaviour
 		{
 			if (!isHidden)
 			{
-				transform.position = respawn1.transform.position;
+				// transform.position = respawn1.transform.position;
+				Debug.Log(transform.position.z);
+				transform.position = new Vector3(respawn1.transform.position.x, respawn1.transform.position.y, 0);
+				Debug.Log(transform.position.z);
+				Debug.Log("----");
 			}
 		}
 		if (collision.CompareTag("GuardView2"))
 		{
 			if (!isHidden)
 			{
-				transform.position = respawn2.transform.position;
+				// transform.position = respawn2.transform.position;
+				Debug.Log(transform.position.z);
+				transform.position = new Vector3(respawn2.transform.position.x, respawn2.transform.position.y, 0);
+				Debug.Log(transform.position.z);
+				Debug.Log("----");
 			}
 		}
 	}

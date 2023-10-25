@@ -12,6 +12,7 @@ TagManager:
   - GuardView2
   - CheeseBar
   - MouseTrap
+  - SceneManager
   layers:
   - Default
   - TransparentFX
