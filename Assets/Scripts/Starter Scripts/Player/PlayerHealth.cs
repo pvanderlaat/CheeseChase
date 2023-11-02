@@ -34,6 +34,8 @@ public class PlayerHealth : MonoBehaviour
 
 	private Animator anim;
 
+	private bool canTakeFireDamage = true;
+
 
 	[HideInInspector] public int index = 0; //for editor uses
 
@@ -215,7 +217,6 @@ public class PlayerHealth : MonoBehaviour
 				{
 					if (collision.tag == "MouseTrap") {
 						bool disabled_ = collision.transform.parent.GetComponent<EnemyAttack>().disabled;
-						Debug.Log("disabled = " + disabled_);
 						if (!disabled_) {
 							DecreaseHealth(weapon.damageValue);
 							collision.transform.parent.GetComponent<EnemyAttack>().disabled = true;
@@ -223,6 +224,12 @@ public class PlayerHealth : MonoBehaviour
 						}
 					}
 					else {
+						if (collision.tag == "FireTrap") {
+							if (!canTakeFireDamage) {
+								return;
+							}
+							StartCoroutine(CoolDown());
+						}
 						DecreaseHealth(weapon.damageValue);
 					}
 					if (currentHealth == 0)
@@ -275,4 +282,10 @@ public class PlayerHealth : MonoBehaviour
 			Debug.Log("Game Manager or Game Scene Manager not assigned on player!");
 		}
 	}
+	IEnumerator CoolDown()
+		{
+			canTakeFireDamage = false;
+			yield return new WaitForSeconds(1);
+			canTakeFireDamage = true;
+		}
 }

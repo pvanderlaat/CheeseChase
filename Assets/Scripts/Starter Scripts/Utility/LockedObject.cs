@@ -33,6 +33,7 @@ public class LockedObject : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        Debug.Log("Collision started");
         if (!used)
         {
             foreach (PlayerInventory.Item i in inv.inventory)

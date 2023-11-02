@@ -13,6 +13,7 @@ TagManager:
   - CheeseBar
   - MouseTrap
   - SceneManager
+  - FireTrap
   layers:
   - Default
   - TransparentFX
