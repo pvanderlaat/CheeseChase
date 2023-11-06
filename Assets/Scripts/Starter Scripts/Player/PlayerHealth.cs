@@ -36,6 +36,8 @@ public class PlayerHealth : MonoBehaviour
 
 	private bool canTakeFireDamage = true;
 
+	private bool canTakeTentacleDamage = true;
+
 
 	[HideInInspector] public int index = 0; //for editor uses
 
@@ -220,7 +222,7 @@ public class PlayerHealth : MonoBehaviour
 						if (!disabled_) {
 							DecreaseHealth(weapon.damageValue);
 							collision.transform.parent.GetComponent<EnemyAttack>().disabled = true;
-							collision.transform.parent.GetComponent<EnemyHealth>().spawnCollectibleOnDeath = false;
+							// collision.transform.parent.GetComponent<EnemyHealth>().spawnCollectibleOnDeath = false; Phillip uncomment to have only active mouse traps drop cheese
 						}
 					}
 					else {
@@ -228,7 +230,13 @@ public class PlayerHealth : MonoBehaviour
 							if (!canTakeFireDamage) {
 								return;
 							}
-							StartCoroutine(CoolDown());
+							StartCoroutine(CoolDownFire());
+						}
+						if (collision.tag == "Tentacles") {
+							if (!canTakeTentacleDamage) {
+								return;
+							}
+							StartCoroutine(CoolDownTentacles());
 						}
 						DecreaseHealth(weapon.damageValue);
 					}
@@ -282,10 +290,17 @@ public class PlayerHealth : MonoBehaviour
 			Debug.Log("Game Manager or Game Scene Manager not assigned on player!");
 		}
 	}
-	IEnumerator CoolDown()
+	IEnumerator CoolDownFire()
 		{
 			canTakeFireDamage = false;
 			yield return new WaitForSeconds(1);
 			canTakeFireDamage = true;
+		}
+	
+	IEnumerator CoolDownTentacles()
+		{
+			canTakeTentacleDamage = false;
+			yield return new WaitForSeconds(1);
+			canTakeTentacleDamage = true;
 		}
 }

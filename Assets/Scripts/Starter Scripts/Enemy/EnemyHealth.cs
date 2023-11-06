@@ -55,12 +55,12 @@ public class EnemyHealth : MonoBehaviour
 
 	void Update()
 	{
-		if (EnemyHealthBar)
-		{
-			Vector2 screenPoint = Camera.main.WorldToScreenPoint(transform.position);
-			healthRectTransform.anchoredPosition = screenPoint - canvasRectTransform.sizeDelta / 2f;
-			healthRectTransform.anchoredPosition += new Vector2(0f, padding);
-		}
+		// if (EnemyHealthBar)
+		// {
+		// 	Vector2 screenPoint = Camera.main.WorldToScreenPoint(transform.position);
+		// 	healthRectTransform.anchoredPosition = screenPoint - canvasRectTransform.sizeDelta / 2f;
+		// 	healthRectTransform.anchoredPosition += new Vector2(0f, padding);
+		// }
 	}
 
 	public void DecreaseHealth(int value)
