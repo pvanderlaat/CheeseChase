@@ -112714,7 +112714,7 @@ Transform:
   m_GameObject: {fileID: 1450578899}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 44, y: 0, z: -9570.98}
+  m_LocalPosition: {x: 44, y: 0, z: -7010}
   m_LocalScale: {x: 477.4858, y: 477.4858, z: 477.4858}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -112758,9 +112758,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -1976474277
+  m_SortingLayer: 5
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: 503da529827e74352b4f9f8d3713a6b8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -136580,7 +136580,7 @@ Transform:
   m_GameObject: {fileID: 9099705894499751740}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.55, y: 1.98, z: 0}
+  m_LocalPosition: {x: 2.55, y: 3.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -138246,7 +138246,7 @@ MonoBehaviour:
   maxHealth: 100
   currentHealth: 0
   padding: 0
-  Dimensions: {x: -70, y: -16}
+  Dimensions: {x: -70, y: -17}
   HealthBar: {fileID: 149585472}
   canvasRectTransform: {fileID: 149585473}
   spawnCollectibleOnDeath: 0
