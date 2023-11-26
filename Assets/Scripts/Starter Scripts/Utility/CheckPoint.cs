@@ -17,7 +17,7 @@ public class CheckPoint : MonoBehaviour
             }
             else
             {
-                Debug.Log("Checkpoint: ERROR no GameManager found!");
+                // debug.log("Checkpoint: ERROR no GameManager found!");
             }
             Destroy(gameObject);
         }
@@ -34,7 +34,7 @@ public class CheckPoint : MonoBehaviour
             }
             else
             {
-                Debug.Log("Checkpoint: ERROR no GameManager found!");
+                // debug.log("Checkpoint: ERROR no GameManager found!");
             }
             Destroy(gameObject);
         }

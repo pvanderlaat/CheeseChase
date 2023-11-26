@@ -870,10 +870,68 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "A courageous mouse follows the smelly trail of cheese into the depths
-    of the sewers.\n\nAs the mouse delves deeper, the aroma of cheese grows stronger.\n\nThere
-    must be a hoard of cheese hidden in the lower levels!\n\n Unhindered by the rumors
-    of prowling cats and hidden traps, the mouse embarks on a quest for cheese."
+  m_text: 'Intro & Credit scene background
+
+    - deviantart.com
+
+    - llCrossfangll
+
+    -
+    "Stardew Locations - The Sewers"
+
+
+    In-game Sewer Background
+
+    &  Assets
+    (Boxes, crates, etc...)
+
+    - itch.io
+
+    - Nura Pixel
+
+    - "Small Sewer-based
+    Dungeon Pixel Tileset"
+
+
+    Mouse & Cheese Sprites
+
+    - itch.io
+
+    - ikoiku
+
+    -
+    "16 x 16 pixel art character - Mouse"
+
+
+    Cat Sprites
+
+    - itch.io
+
+    -
+    ikoiku
+
+    - "16 x 16 pixel art character - Cat"
+
+
+    Frog Sprites
+
+    - itch.io
+
+    -
+    Dagon
+
+    - "Toxic Frog Animations Pixel Art 2D FREE"
+
+
+    All other art generated
+    with OpenAI Dall-E
+
+
+    Code from UF DAS
+
+
+    Special thanks to professor Nick
+    Heitzman!'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
@@ -1024,7 +1082,7 @@ Animator:
   m_GameObject: {fileID: 445881817}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: affbc07a5965949499f8576eba08404e, type: 2}
+  m_Controller: {fileID: 9100000, guid: fbed7fcc634db4c8a9d7202670ca6b86, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1296,7 +1354,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 2
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -2464,7 +2522,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Continue
+  m_text: Menu
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

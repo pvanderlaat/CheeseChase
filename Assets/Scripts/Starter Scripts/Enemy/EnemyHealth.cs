@@ -16,6 +16,8 @@ public class EnemyHealth : MonoBehaviour
 	[Tooltip("Padding between healthbar and enemy")]
 	public float padding = 2f;
 
+	public bool isFinalBoss = false;
+
 	[Tooltip("Use this to control how wide or tall the health bar is")]
 	public Vector2 Dimensions;
 
@@ -103,14 +105,18 @@ public class EnemyHealth : MonoBehaviour
 						Vector3 position = transform.position;
 						position.x -= (float) 6.5;
 						position.y -= (float) 6.7;
-						// Debug.Log(position);
-						// Debug.Log("CREATING COLLECTIBLE");
+						// // debug.log(position);
+						// // debug.log("CREATING COLLECTIBLE");
 						creatingCollectible = true;
 						Instantiate(collectible, position, transform.rotation);
 					}
 					Destroy(this.gameObject); //If this enemy reaches 0 health, they are straight up destroyed. 
 											  //If you want something fancy like an animation or the like, you can try to implement it here
 					Destroy(healthBarImage.gameObject);
+
+					if (isFinalBoss) {
+						GameObject.FindGameObjectWithTag("SceneManager").GetComponent<GameSceneManager>().LoadScene(5);
+					}
 				}
 			}
 		}

@@ -22,12 +22,12 @@ public class EnemyPatrolPathBehaviour : StateMachineBehaviour
         thisObject = animator.gameObject;
         if(thisObject == null)
         {
-            Debug.Log("anim");
+            // // debug.log("anim");
         }
         Transform paths = thisObject.transform.parent.Find("Paths"); // load in an empty named Paths that contains transforms
         if(paths == null)
         {
-            Debug.Log("path is null");
+            // // debug.log("path is null");
         }
         foreach (Transform path in paths)
         {

@@ -78,6 +78,7 @@ public class PlayerAttack : MonoBehaviour
 	public void Attack()
 	{
 		//This is where the weapon is rotated in the right direction that you are facing
+		// Debug.Log("Attacking. Stealth  = " + GetComponent<StealthRespawn>().isHidden);
 		if (weapon && canAttack)
 		{
 			if (UsePlayerAttackAnimations)
@@ -90,6 +91,7 @@ public class PlayerAttack : MonoBehaviour
 
 			StartCoroutine(CoolDown());
 		}
+		// Debug.Log("Attacking. Stealth  = " + GetComponent<StealthRespawn>().isHidden);
 	}
 
 	public void StopAttack()

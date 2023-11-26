@@ -32,7 +32,7 @@ public class DialogueTrigger : MonoBehaviour
     {
         if (!hasBeenUsed && inArea && Input.GetKeyDown(KeyCode.Return) && nextTime < Time.timeSinceLevelLoad)
         {
-            //Debug.Log("Advance");
+            //// debug.log("Advance");
             nextTime = Time.timeSinceLevelLoad + waitTime;
             manager.AdvanceDialogue();
         }
@@ -91,7 +91,7 @@ public class DialogueTrigger : MonoBehaviour
         {
             manager.currentTrigger = this;
             TriggerDialogue();
-            //Debug.Log("Collision");
+            //// debug.log("Collision");
         }
     }
     private void OnTriggerStay2D(Collider2D other)

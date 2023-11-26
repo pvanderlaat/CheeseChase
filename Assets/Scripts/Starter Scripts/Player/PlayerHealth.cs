@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 
 public class PlayerHealth : MonoBehaviour
@@ -41,6 +42,8 @@ public class PlayerHealth : MonoBehaviour
 
 	[HideInInspector] public int index = 0; //for editor uses
 
+	[HideInInspector] public bool takingDamage = false; //for editor uses
+
 	void Start()
 	{
 		SetUpHealth();
@@ -77,6 +80,8 @@ public class PlayerHealth : MonoBehaviour
 
 	public void DecreaseHealth(int value)//This is the function to use if you want to decrease the player's health somewhere
 	{
+		takingDamage = true;
+		playerAudio.DamageSource.Play();
 		if (!useHealthBar)
 		{
 			SegameManagerentedHealthDecrease(value);
@@ -88,6 +93,7 @@ public class PlayerHealth : MonoBehaviour
 			currentHealth = 0;
 		}
 		UpdateHealthBar();
+		takingDamage = false;
 	}
 
 	public void IncreaseHealth(int value)//This is the function to use if you want to increase the player's heath somewhere
@@ -274,6 +280,10 @@ public class PlayerHealth : MonoBehaviour
 			{
 				playerAudio.DeathSource.Play();
 			}
+			if (SceneManager.GetActiveScene().buildIndex == 4) {
+				yield return new WaitForSeconds(1f);
+				GameObject.FindGameObjectWithTag("SceneManager").GetComponent<GameSceneManager>().LoadScene(4);
+			}
 			yield return new WaitForSeconds(1f);
 			StartCoroutine(gameSceneManager.FadeOut());
 
@@ -287,7 +297,7 @@ public class PlayerHealth : MonoBehaviour
 		}
 		else
 		{
-			Debug.Log("Game Manager or Game Scene Manager not assigned on player!");
+			// debug.log("Game Manager or Game Scene Manager not assigned on player!");
 		}
 	}
 	IEnumerator CoolDownFire()

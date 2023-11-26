@@ -10,6 +10,8 @@ public class PlayerAudio : MonoBehaviour
 	public bool LoopWalkAudio = false;
 	public AudioClip AttackAudioClip;
 	public bool LoopAttackAudio = false;
+	public AudioClip DamageAudioClip;
+	public bool LoopDamageAudio = false;
 	public AudioClip DeathAudioClip;
 	public bool LoopDeathAudio = false;
 	public AudioClip JumpAudioClip;
@@ -22,6 +24,7 @@ public class PlayerAudio : MonoBehaviour
 	//And here is where you should create the respective AudioSource
 	[HideInInspector] public AudioSource WalkSource;
 	[HideInInspector] public AudioSource AttackSource;
+	[HideInInspector] public AudioSource DamageSource;
 	[HideInInspector] public AudioSource DeathSource;
 	[HideInInspector] public AudioSource JumpSource;
 	//The whole [HideInInspector] thing just makes it so that way you can't see these public variables in editor
@@ -37,34 +40,40 @@ public class PlayerAudio : MonoBehaviour
 		//First you have to make a new GameObject with a name
 		GameObject WalkGameObject = new GameObject("WalkAudioSource");
 		GameObject AttackGameObject = new GameObject("AttackAudioSource");
+		GameObject DamageGameObject = new GameObject("DamageAudioSource");
 		GameObject DeathGameObject = new GameObject("DeathAudioSource");
 		GameObject JumpGameObject = new GameObject("JumpAudioSource");
 
 		//Next you have to Assign the parent so it's all organized
 		AssignParent(WalkGameObject);
 		AssignParent(AttackGameObject);
+		AssignParent(DamageGameObject);
 		AssignParent(DeathGameObject);
 		AssignParent(JumpGameObject);
 
 		//Then you have to add the actual audiosource to each gameobject
 		WalkSource = WalkGameObject.AddComponent<AudioSource>();
 		AttackSource = AttackGameObject.AddComponent<AudioSource>();
+		DamageSource = DamageGameObject.AddComponent<AudioSource>();
 		DeathSource = DeathGameObject.AddComponent<AudioSource>();
 		JumpSource = DeathGameObject.AddComponent<AudioSource>();
 		//And finally you assign the clip to the audio source
 		WalkSource.clip = WalkAudioClip;
 		AttackSource.clip = AttackAudioClip;
+		DamageSource.clip = DamageAudioClip;
 		DeathSource.clip = DeathAudioClip;
 		JumpSource.clip = JumpAudioClip;
 
 		//And here is just where we assign the global volume level, you can make these individualized if you want
 		WalkSource.volume = VolumeLevel;
 		AttackSource.volume = VolumeLevel;
+		DamageSource.volume = VolumeLevel;
 		DeathSource.volume = VolumeLevel;
 		JumpSource.volume = VolumeLevel;
 
 		WalkSource.loop = LoopWalkAudio;
 		AttackSource.loop = LoopAttackAudio;
+		DamageSource.loop = LoopDamageAudio;
 		DeathSource.loop = LoopDeathAudio;
 		JumpSource.loop = LoopJumpAudio;
 	}
@@ -79,6 +88,7 @@ public class PlayerAudio : MonoBehaviour
 	{
 		WalkSource.Stop();
 		AttackSource.Stop();
+		DamageSource.Stop();
 		DeathSource.Stop();
 		JumpSource.Stop();
 	}

@@ -85,14 +85,14 @@ public class LockedObject_MultiKey : MonoBehaviour
         //     //Do you have all the keys?
         //     if (passAmount == neededKeys.Count)
         //     {
-        //         Debug.Log("You have all the keys!");
+        //         // debug.log("You have all the keys!");
         //         unlockGameObject.SetActive(setActive);
         //         Behaviors();
                 
         //     }
         //     else
         //     {
-        //         Debug.Log("You don't have all the keys...");
+        //         // debug.log("You don't have all the keys...");
         //     }
         //     //Reset
         //     passAmount = 0;

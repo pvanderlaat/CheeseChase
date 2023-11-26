@@ -104242,6 +104242,8 @@ MonoBehaviour:
   LoopWalkAudio: 0
   AttackAudioClip: {fileID: 8300000, guid: 093e28ab1fae04b8cae550fea3b873a2, type: 3}
   LoopAttackAudio: 0
+  DamageAudioClip: {fileID: 8300000, guid: d9359abb178ac4051879b436e757c10c, type: 3}
+  LoopDamageAudio: 0
   DeathAudioClip: {fileID: 8300000, guid: 23f078b5560524ca09c2eedf2c58d888, type: 3}
   LoopDeathAudio: 0
   JumpAudioClip: {fileID: 8300000, guid: 98308e4305aa5a642a390256247821f3, type: 3}
@@ -104249,6 +104251,7 @@ MonoBehaviour:
   VolumeLevel: 0.232
   WalkSource: {fileID: 0}
   AttackSource: {fileID: 0}
+  DamageSource: {fileID: 0}
   DeathSource: {fileID: 0}
   JumpSource: {fileID: 0}
 --- !u!95 &6862331664425944565

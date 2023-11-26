@@ -91,7 +91,7 @@ public class PlayerMovement : MonoBehaviour
 	// Update is called once per frame
 	void Update()
 	{
-		// Debug.Log("(" + HorizontalMovement + ", " + VerticalMovement + ")");
+		// // debug.log("(" + HorizontalMovement + ", " + VerticalMovement + ")");
 		if (ShowDebugRaycast)
 			Debug.DrawRay(col.bounds.center, Vector2.down * rayLength, Color.red); //draws a ray showing ray length
 
@@ -108,7 +108,9 @@ public class PlayerMovement : MonoBehaviour
 				anim.SetBool("isMoving", true);
 				if (playerAudio && !playerAudio.WalkSource.isPlaying && playerAudio.WalkSource.clip != null)
 				{
-					playerAudio.WalkSource.Play();
+					if (!GetComponent<PlayerHealth>().takingDamage) {
+						playerAudio.WalkSource.Play();
+					}
 				}
 			}
 			else
