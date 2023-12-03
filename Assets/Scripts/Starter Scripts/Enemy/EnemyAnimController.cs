@@ -29,7 +29,7 @@ public class EnemyAnimController : MonoBehaviour
 	void Update()
 	{
 		animator.SetBool("isHidden", stealth.isHidden);
-		Debug.Log("stealth.isHidden " + stealth.isHidden);
+		// Debug.Log("stealth.isHidden " + stealth.isHidden);
 		animator.SetFloat("distance", distance); // set an animator float variable for 
 		distance = (player.transform.position - transform.position).magnitude; // how far away this object is from the player
 
@@ -56,7 +56,7 @@ public class EnemyAnimController : MonoBehaviour
 	private void OnTriggerEnter2D(Collider2D other) // when this object enters another trigger
 	{
 		if (other.gameObject.tag.Equals("Player")) {
-			// debug.log("isHidden = " + stealth.isHidden);
+			// // debug.log("isHidden = " + stealth.isHidden);
 		}
 		if (other.gameObject.tag.Equals("Player") && !(stealth.isHidden))
 		{

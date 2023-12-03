@@ -423,7 +423,7 @@ Transform:
   m_GameObject: {fileID: 161673761}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.3, y: 32.3, z: 0.1389}
+  m_LocalPosition: {x: -6.3, y: 32.24, z: 0.1389}
   m_LocalScale: {x: 440.1487, y: 440.1487, z: 440.1487}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -923,15 +923,24 @@ MonoBehaviour:
     - "Toxic Frog Animations Pixel Art 2D FREE"
 
 
-    All other art generated
-    with OpenAI Dall-E
+    Music
+
+    - chosic.com
+
+    -
+    Kevin MacLeod
+
+    - The Builder
 
 
-    Code from UF DAS
+    All other art generated with OpenAI Dall-E
 
 
-    Special thanks to professor Nick
-    Heitzman!'
+    Code
+    from UF DAS
+
+
+    Special thanks to professor Nick Heitzman!'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}

@@ -29506,7 +29506,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1055045282
 Transform:
   m_ObjectHideFlags: 0
@@ -132273,6 +132273,7 @@ GameObject:
   - component: {fileID: 2001037974}
   - component: {fileID: 2001037976}
   - component: {fileID: 2001037975}
+  - component: {fileID: 2001037977}
   m_Layer: 0
   m_Name: HealthTrigger
   m_TagString: Untagged
@@ -132354,6 +132355,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.44516346, y: 0.50418687}
   m_EdgeRadius: 0
+--- !u!114 &2001037977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2001037973}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c24043e5d229a54c9349110b1ae46bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Chirp: {fileID: 8300000, guid: 95f7bd0588fd8419db99b31a815bc0c1, type: 3}
 --- !u!1 &2004755147
 GameObject:
   m_ObjectHideFlags: 0
@@ -139287,6 +139301,7 @@ MonoBehaviour:
   useHealthBar: 0
   playerAudio: {fileID: 6757112826124485671}
   index: 1
+  takingDamage: 0
 --- !u!114 &7267919276471897005
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -16,6 +16,7 @@ TagManager:
   - FireTrap
   - Tentacles
   - EnemyHealthCanvas
+  - Music
   layers:
   - Default
   - TransparentFX

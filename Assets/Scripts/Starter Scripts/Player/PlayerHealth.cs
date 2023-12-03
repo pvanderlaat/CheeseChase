@@ -81,10 +81,12 @@ public class PlayerHealth : MonoBehaviour
 	public void DecreaseHealth(int value)//This is the function to use if you want to decrease the player's health somewhere
 	{
 		takingDamage = true;
+		Debug.Log("Play damage sound");
 		playerAudio.DamageSource.Play();
 		if (!useHealthBar)
 		{
 			SegameManagerentedHealthDecrease(value);
+			takingDamage = false;
 			return;
 		}
 		currentHealth -= value;
